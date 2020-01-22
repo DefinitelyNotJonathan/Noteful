@@ -1,5 +1,5 @@
 import React from 'react'
-import Note from '../Note/note'
+import Note from '../Note/Note'
 import ApiContext from '../ApiContext'
 import {findNote} from '../notesHelpers'
 import PropTypes from 'prop-types'

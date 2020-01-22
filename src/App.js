@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import {Route, Link} from 'react-router-dom';
-import NoteListNav from './NoteListNav/noteListNav';
-import NotePageNav from './NotePageNav/notePageNav';
-import NoteListMain from './NoteListMain/noteListMain';
-import NotePageMain from './NotePageMain/notePageMain';
+import NoteListNav from './NoteListNav/NoteListNav';
+import NotePageNav from './NotePageNav/NotePageNav';
+import NoteListMain from './NoteListMain/NoteListMain';
+import NotePageMain from './NotePageMain/NotePageMain';
 import ApiContext from './ApiContext';
 import config from './config';
 import STORE from './store';

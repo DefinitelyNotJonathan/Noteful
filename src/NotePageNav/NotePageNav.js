@@ -1,5 +1,5 @@
 import React from 'react'
-import CircleButton from '../button/button'
+import CircleButton from '../button/Button'
 import ApiContext from '../ApiContext'
 import {findNote, findFolder} from '../notesHelpers.js'
 import PropTypes from 'prop-types'
