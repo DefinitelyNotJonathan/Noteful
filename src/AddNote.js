@@ -16,7 +16,10 @@ class AddNote extends React.Component {
                     folderId: e.target.noteFolder.value,
                     content: e.target.noteContent.value
                 }
-                if((data.name || data.content) === '') {
+                if(data.name === '') {
+                    alert('please complete the required fields');
+                    return false;
+                } else if(data.content === '') {
                     alert('please complete the required fields');
                     return false;
                 }

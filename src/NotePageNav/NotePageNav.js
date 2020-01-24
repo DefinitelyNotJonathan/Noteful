@@ -2,7 +2,6 @@ import React from 'react'
 import CircleButton from '../button/Button'
 import ApiContext from '../ApiContext'
 import {findNote, findFolder} from '../notesHelpers.js'
-import PropTypes from 'prop-types'
 
 class NotePageNav extends React.Component {
   static defaultProps = {
@@ -40,9 +39,5 @@ class NotePageNav extends React.Component {
   }
 }
 
-NotePageNav.propTypes={
-  history: PropTypes.objectOf(PropTypes.function),
-  match: PropTypes.objectOf(PropTypes.object)
-};
 
 export default NotePageNav;

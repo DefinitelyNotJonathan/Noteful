@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 class ErrorBoundary extends React.Component {
     
@@ -22,5 +23,9 @@ class ErrorBoundary extends React.Component {
         return this.props.children;
       }  
 }
+
+ErrorBoundary.propTypes= {
+  errorMessage: PropTypes.string.isRequired
+};
 
 export default ErrorBoundary;

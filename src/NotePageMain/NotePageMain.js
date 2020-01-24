@@ -2,7 +2,6 @@ import React from 'react'
 import Note from '../Note/Note'
 import ApiContext from '../ApiContext'
 import {findNote} from '../notesHelpers'
-import PropTypes from 'prop-types'
 
 export default class NotePageMain extends React.Component {
   static defaultProps = {
@@ -41,7 +40,3 @@ export default class NotePageMain extends React.Component {
     )
   }
 }
-
-NotePageMain.propTypes= {
-  match: PropTypes.objectOf(PropTypes.object)
-};
