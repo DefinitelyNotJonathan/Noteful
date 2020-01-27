@@ -36,7 +36,6 @@ class Note extends React.Component {
       })
   }
   render() {
-    console.log(format(new Date(), 'yyyy-LL-dd'));
     const { name, id, modified } = this.props
     return (
       <div className='Note'>
@@ -58,7 +57,7 @@ class Note extends React.Component {
             Modified
             {' '}
             <span className='Date'>
-              {format( modified, 'Do MMM yyyy')}
+              {format(new Date(modified), 'do MMM yyyy')}
             </span>
           </div>
         </div>
