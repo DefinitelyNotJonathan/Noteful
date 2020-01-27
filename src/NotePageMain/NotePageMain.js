@@ -15,10 +15,6 @@ export default class NotePageMain extends React.Component {
     this.props.history.push(`/`)
   }
 
-  componentDidMount() {
-    console.log(this.context.notes);
-  }
-
   render() {
     const { notes=[] } = this.context
     const { noteId } = this.props.match.params

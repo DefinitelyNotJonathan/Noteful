@@ -12,7 +12,7 @@ class AddNote extends React.Component {
                 let data = {
                     id:null,
                     name: e.target.noteName.value,
-                    modified:null,
+                    modified: new Date(),
                     folderId: e.target.noteFolder.value,
                     content: e.target.noteContent.value
                 }
@@ -60,7 +60,6 @@ class AddNote extends React.Component {
                     })}
                 </select>
                 <button>Create Note</button>
-
             </form>
 
             

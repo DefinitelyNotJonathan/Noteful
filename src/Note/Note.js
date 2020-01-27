@@ -1,8 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { format } from 'date-fns'
 import ApiContext from '../ApiContext'
 import config from '../config'
 import PropTypes from 'prop-types'
+
 
 class Note extends React.Component {
   static defaultProps ={
@@ -33,9 +35,9 @@ class Note extends React.Component {
         console.error({ error })
       })
   }
-
   render() {
-    const { name, id } = this.props
+    console.log(format(new Date(), 'yyyy-LL-dd'));
+    const { name, id, modified } = this.props
     return (
       <div className='Note'>
         <h2 className='Note__title'>
@@ -51,14 +53,22 @@ class Note extends React.Component {
           {' '}
           remove
         </button>
+        <div className='Note__dates'>
+          <div className='Note__dates-modified'>
+            Modified
+            {' '}
+            <span className='Date'>
+              {format( modified, 'Do MMM yyyy')}
+            </span>
+          </div>
+        </div>
       </div>
     )
   }
 }
-
 Note.propTypes={
   onDeleteNote: PropTypes.func,
-  id: PropTypes.string.isRequired
+  id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired
 };
 
