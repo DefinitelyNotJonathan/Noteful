@@ -1,3 +1,3 @@
 export default {
-  API_ENDPOINT: 'http://localhost:9090'
+  API_ENDPOINT: 'https://whispering-earth-32320.herokuapp.com'
 }

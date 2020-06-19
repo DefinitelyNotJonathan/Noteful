@@ -50,3 +50,49 @@ class AddFolder extends React.Component {
 }
 
 export default AddFolder;
+
+
+
+const p1 = new Promise((resolve, reject) => {
+    console.log('Running the asynchronous code here');
+    const duration = Math.floor(Math.random() * 5000);
+    setTimeout(() => {
+        console.log('About to fail');
+        reject('Error 42: life has no meaning');
+    }, duration);
+});
+
+p1.then(() => {
+    console.log('The promise completed successfully');
+}).catch(err => {
+    console.log('The promise has failed with the following message:');
+    console.log(err);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
