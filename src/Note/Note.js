@@ -67,7 +67,7 @@ class Note extends React.Component {
 }
 Note.propTypes={
   onDeleteNote: PropTypes.func,
-  id: PropTypes.string.isRequired,
+  id: PropTypes.string,
   name: PropTypes.string.isRequired
 };
 
