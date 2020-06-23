@@ -25,7 +25,7 @@ class NoteListMain extends React.Component {
           {notesForFolder.map(note =>
             <li key={note.id}>
               <Note
-                id={String(note.id)}
+                id={note.id}
                 name={note.name}
                 modified={note.modified}
               />
